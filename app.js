@@ -1,3 +1,4 @@
+let numeroLimite = 100
 let numeroSecreto = gerarNumero();
 let tentativas = 1
 let chute
@@ -6,7 +7,7 @@ mensagemInicial()
 
 function mensagemInicial(){
     novoHTML("h1", "Jogo do Número Secreto");
-    novoHTML("p", "Escolha um número entre 1 e 10");
+    novoHTML("p", `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
 function verificarChute(){
@@ -35,7 +36,7 @@ function novoHTML(tag, texto){
 }
 
 function gerarNumero(){
-    return parseInt(Math.random() * 10 + 1);
+    return parseInt(Math.random() * numeroLimite + 1);
 }
 
 function limparCampo(){
