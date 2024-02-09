@@ -1,4 +1,4 @@
-let numeroLimite = 1000
+let numeroLimite = 100
 let numeroSecreto = gerarNumero();
 let tentativas = 1
 let chute
