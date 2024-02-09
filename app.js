@@ -14,7 +14,7 @@ function verificarChute(){
     chute = document.querySelector("input").value;
 
     if (chute == numeroSecreto){
-        novoHTML("h1", "Parabéns!");
+        novoHTML("h1", "Parabéns!!");
         let palavraTentativa = tentativas == 1? "tentativa" : "tentativas";
         let mensagemTentativas = `Você acertou o número secreto ${numeroSecreto} em ${tentativas} ${palavraTentativa}`
         novoHTML("p", mensagemTentativas);
