@@ -33,6 +33,7 @@ function verificarChute(){
 function novoHTML(tag, texto){
     let name = document.querySelector(tag);
     name.innerHTML = texto;
+    responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate:1.2});
 }
 
 function gerarNumero(){
