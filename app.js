@@ -1,6 +1,6 @@
 let numeroLimite = 100
 let numeroSecreto = gerarNumero();
-let tentativas = 1
+let tentativas = 10
 let chute
 
 mensagemInicial()
